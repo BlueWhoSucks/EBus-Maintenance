@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: "roboto",sans-serif;
+    text-decoration: none;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(8, 123, 160, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom:32px;
+    padding: 10px;
+    z-index: 50;
+    background: transparent ;
+    backdrop-filter: blur(10px);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bar_icon ul{
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 52px;
+    text-decoration: none;
+}
+ul:hover li{
+    opacity: .2;
+    filter: blur(2px);
+}
+ 
+ul li:hover{
+    opacity: 1;
+    filter:blur(0px);
+}
+.logo_container img{
+    font-size: 12px;
+}
+.pallavi{
+    background-image: url('image5.jpeg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+/* section */
+.h-card{
+    display: flex;
+    margin: 2rem 1rem;
+    box-shadow: 0px 5px 4px grey;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    /* overflow: hidden; */
+}
+.card_content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.bottom{
+    display: flex;
+}
+.contact{
+    background-color: #7321aa;;
+}
+.about{
+    background-color: #23359b;
+}
+.contact,.about{
+    min-height:300px;
+    padding: 32px;
+    color: aliceblue;
+}
+.contact p,.about p{
+    margin-bottom: 20px;
+}
+.contact h2,.about h2{
+    font-size:64px ;
+    font-weight: 300;
+}
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000000;
+    padding: 25px;
+    color: aliceblue;
+}
+#hero{
+   background-image: url(image5.jpeg);
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   min-height: 100vh;
+
+}
+#hero .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero_content{
+    display: grid;
+    place-items: center;
+}
+#hero h1{
+    font-size: 3rem;
+    font-weight:bold;
+}
+#hero h2{
+    font-size: 4rem;
+    font-weight:bold;
+    overflow: hidden;   /*ensure the content is not revieled until the animations*/
+    border-right: .15rem solid orange;/*the typewriter cursor*/
+    white-space: nowrap;/*keep the content in single line*/
+    margin: 0 auto;/*gives a scrolling effect as typing happerns*/
+    animation: typing 7s steps(48,end) ,blink-caret 0.75s step-end infinite;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes blink-caret {
+    from , to { border-color:transparent}
+    50%{border-color:rgb(219, 161, 0)}
+ }
