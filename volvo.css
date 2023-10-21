@@ -72,12 +72,16 @@ ul li:hover{
 }
 .bottom{
     display: flex;
+    
 }
 .contact{
     background-color: #7321aa;;
+    width:50vw;
 }
 .about{
     background-color: #23359b;
+    width:50vw;
+    
 }
 .contact,.about{
     min-height:300px;
