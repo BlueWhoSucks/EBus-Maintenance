@@ -17,6 +17,18 @@
         font-size: 35px;
         font-weight: 25px;
     }
+    .box2{
+        border-radius: 2px;
+        border: 2px solid black;
+        margin-left: 480px;
+        display: flex;
+        width: 880px;
+        background-color: #f5b368;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: black;
+    }
 
 </style>
 </head>
@@ -28,7 +40,7 @@
             </div>
             <div class="bar_icon" >
                 <ul>
-                        <li><a href="volvo.html" style="color: rgb(255, 255, 255); text-decoration: none;">Home</a></li>
+                        <li><a href="index.html" style="color: rgb(255, 255, 255); text-decoration: none;">Home</a></li>
                         <li><a href="tireWear.html" style="color: rgb(238, 238, 238); text-decoration: none;">Vehicle Maintenance</a></li>
                         <li><a href="" style="color: rgb(255, 239, 239); text-decoration: none;">Get Costs</a></li>
                         <li><a href="specifications.html" style="color: rgb(252, 243, 243);text-decoration: none;">Bus Specifications</a></li>
@@ -37,6 +49,9 @@
         </div>
     </nav>
     <br>
+    <p><H1><b style="text-align: center; color: aliceblue; align-items: center; margin-left: 15vh;">GET COSTS :</b></H1></p>
+
+    <div class="box2">
     <section class="costs1">
     <label for="city">Which City are You Operating in:</label>
     <select id="city" name="city" onchange="currChange()">
@@ -73,6 +88,7 @@
 
     </div>
 </section>
+</div>
     <script>  
     function currChange(){
         let city= document.getElementById("city").value;
