@@ -72,21 +72,19 @@ ul li:hover{
 }
 .bottom{
     display: flex;
-    
 }
 .contact{
-    background-color: #7321aa;;
-    width:50vw;
+    background-color: #7321aa;
 }
 .about{
-    background-color: #23359b;
-    width:50vw;
     
+    background-color: #23359b;
 }
 .contact,.about{
     min-height:300px;
     padding: 32px;
     color: aliceblue;
+
 }
 .contact p,.about p{
     margin-bottom: 20px;
